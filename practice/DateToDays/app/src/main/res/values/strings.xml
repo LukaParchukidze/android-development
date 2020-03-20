@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Elapsed Days Since Birth</string>
+    <string name="button">Calculate</string>
+    <string name="result">You are %1$s days old !</string>
+</resources>
