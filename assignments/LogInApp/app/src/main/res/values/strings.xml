@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Log in</string>
+    <string name="email_hint"><font size="17">Enter your Email</font></string>
+</resources>
