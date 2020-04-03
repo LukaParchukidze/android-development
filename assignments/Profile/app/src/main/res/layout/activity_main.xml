@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Holo.NoActionBar"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@mipmap/profile_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:src="@mipmap/profile_icon3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/fullNameMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/fullname_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="12dp"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:text="Luka Parchukidze" />
+
+
+        <TextView
+            android:id="@+id/emailMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/email_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="12dp"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:textSize="16sp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:text="parchukidze@gmail.com" />
+
+
+        <TextView
+            android:id="@+id/birthYearMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/calendar_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="12dp"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:text="1998" />
+
+        <TextView
+            android:id="@+id/genderMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/gender_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="12dp"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:text="Male" />
+
+        <Button
+            android:id="@+id/changeProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/change_profile_button"
+            android:fontFamily="serif-monospace"
+            android:text="Change Profile"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</FrameLayout>
