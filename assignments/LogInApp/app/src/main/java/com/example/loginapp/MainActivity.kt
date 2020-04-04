@@ -43,10 +43,10 @@ class MainActivity : AppCompatActivity() {
     private fun checker() {
         LogInButton.setOnClickListener {
             if(email_field.text.toString().isNullOrBlank() && password_field.text.toString().isNullOrBlank()) {
-                Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
             }
             else {
-                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_SHORT).show()
             }
         }
     }
