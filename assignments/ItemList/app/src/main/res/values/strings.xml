@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ItemList</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_description">Enter Description</string>>
+    <string name="enter_item_info">Enter Item Info</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+</resources>
