@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Person List</string>
+    <string name="back_to_main">Back to Main</string>
+    <string name="user_profile">User Profile</string>
+</resources>
