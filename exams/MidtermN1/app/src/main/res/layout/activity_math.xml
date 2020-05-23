@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".math.MathActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/background_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:text="@string/numbers_api"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/triviaRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trivia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/mathRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/math"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/dateRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/date"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/yearRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/year"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="serif-monospace"
+                android:text="@string/number"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/enterNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/fields_background"
+                android:drawableStart="@mipmap/ic_number"
+                android:drawablePadding="12dp"
+                android:fontFamily="serif-monospace"
+                android:hint="@string/enter_number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#FBF4F4"
+                android:textColorHint="#86FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/monthTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/month"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/monthEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/fields_background"
+                    android:drawableStart="@mipmap/ic_calendar"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/enter_month_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#FBF4F4"
+                    android:textColorHint="#86FFFFFF"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/dayTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/day"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/dayEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/fields_background"
+                    android:drawableStart="@mipmap/ic_calendar"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/enter_day_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#FBF4F4"
+                    android:textColorHint="#86FFFFFF"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/predictButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/main_button_background"
+                android:fontFamily="serif-monospace"
+                android:text="@string/check"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/responseTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="serif-monospace"
+                android:text="@string/waiting_for_response"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

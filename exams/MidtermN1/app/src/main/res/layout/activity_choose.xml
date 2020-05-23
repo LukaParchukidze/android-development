@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseActivity"
+    android:background="@mipmap/background_5">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/what_are_you_interested_in"
+            android:layout_marginBottom="40dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/openMathActivity"
+            android:layout_width="144dp"
+            android:layout_height="60dp"
+            android:text="@string/math"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#EE0030"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/openMusicActivity"
+            android:layout_width="144dp"
+            android:layout_height="60dp"
+            android:text="@string/music"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:background="#EE0030"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/signOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/main_button_background"
+            android:fontFamily="serif-monospace"
+            android:text="@string/sign_out"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

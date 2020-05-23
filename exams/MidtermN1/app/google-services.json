@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "680285166443",
+    "firebase_url": "https://midterm1-btu.firebaseio.com",
+    "project_id": "midterm1-btu",
+    "storage_bucket": "midterm1-btu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680285166443:android:0a26e28a44241a1d6e4a2e",
+        "android_client_info": {
+          "package_name": "com.example.midtermn1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680285166443-kqa31oaqr6bu81v9vsre3vqlbum64q7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8HPJcr_WPbgiZOL62NWbcZO051FH3bD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680285166443-kqa31oaqr6bu81v9vsre3vqlbum64q7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
