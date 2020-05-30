@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">06-RoomDatabase</string>
+    <string name="submit">Submit</string>
+    <string name="add_user">Add User</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="edit_user">Edit User</string>
+    <string name="create_user">Create User</string>
+</resources>
